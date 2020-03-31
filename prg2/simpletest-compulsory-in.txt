@@ -1,0 +1,27 @@
+# VERY simple basic test of all compulsory commands
+# Clear the data structures and check that no beacons or fibres exist
+clear_beacons
+clear_fibres
+# Test compulsory commands with empty data
+all_beacons
+all_xpoints
+clear_fibres
+fibres (0,0)
+# Add One Beacon, one fibre, and test commands
+add_beacon Srn BaradDur (2,2) (255,100,0)
+add_fibre (2,2) (5,3) 5
+all_fibres
+all_xpoints
+fibres (2,2)
+fibres (5,3)
+# And second beacon and test routes
+add_beacon Agn MinasTirith (3,6) (200,200,200)
+add_fibre (3,6) (5,3) 3
+all_fibres
+route_any (2,2) (3,6)
+# Remove fibre and test again
+remove_fibre (5,3) (2,2)
+route_any (2,2) (3,6)
+all_fibres
+all_xpoints
+quit

@@ -1,0 +1,20 @@
+# Tests with example's beacons with more operations
+clear_beacons
+clear_fibres
+read "example-beacons.txt"
+read "example-fibres.txt"
+all_fibres
+all_xpoints
+fibres (6,6)
+remove_fibre (6,6) (1,6)
+all_fibres
+all_xpoints
+fibres (6,6)
+remove_fibre (6,6) (1,6)
+route_any (0,0) (11,10)
+remove_fibre (10,4) (6,6)
+route_any (0,0) (11,10)
+clear_fibres
+all_fibres
+all_xpoints
+quit

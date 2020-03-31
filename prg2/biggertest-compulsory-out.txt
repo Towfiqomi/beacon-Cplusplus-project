@@ -1,0 +1,411 @@
+> # Read in a bigger set of beacons and fibres
+> clear_beacons
+Cleared all beacons
+> clear_fibres
+All fibres removed.
+> read "bigger-beacons.txt"
+** Commands from 'bigger-beacons.txt'
+> add_beacon Malachite Malachite (0,0) (0,211,105)
+Malachite: pos=(0,0), color=(0,211,105):1371, id=Malachite
+> add_beacon Olive Olive (6,0) (117,117,0)
+Olive: pos=(6,0), color=(117,117,0):1053, id=Olive
+> add_beacon VenetianRed VenetianRed (1,6) (193,0,35)
+VenetianRed: pos=(1,6), color=(193,0,35):614, id=VenetianRed
+> add_beacon Medium Medium (4,4) Blue (37,0,206)
+Invalid parameters for command 'add_beacon'!
+> add_beacon FreeSpeechRed FreeSpeechRed (4,8) (170,25,0)
+FreeSpeechRed: pos=(4,8), color=(170,25,0):660, id=FreeSpeechRed
+> add_beacon DarkGreen DarkGreen (9,2) (0,28,21)
+DarkGreen: pos=(9,2), color=(0,28,21):189, id=DarkGreen
+> add_beacon Red Red (20,0) (249,8,0)
+Red: pos=(20,0), color=(249,8,0):795, id=Red
+> add_beacon TyrianPurple TyrianPurple (0,20) (81,0,16)
+TyrianPurple: pos=(0,20), color=(81,0,16):259, id=TyrianPurple
+> add_beacon BlueLagoon BlueLagoon (11,10) (0,101,130)
+BlueLagoon: pos=(11,10), color=(0,101,130):736, id=BlueLagoon
+> add_beacon Sangria Sangria (2,12) (145,0,14)
+Sangria: pos=(2,12), color=(145,0,14):449, id=Sangria
+> add_beacon CopperRust CopperRust (12,4) (145,72,79)
+CopperRust: pos=(12,4), color=(145,72,79):946, id=CopperRust
+> add_beacon FernGreen FernGreen (15, 6) (62,124,64)
+FernGreen: pos=(15,6), color=(62,124,64):994, id=FernGreen
+> add_beacon LuckyPoint LuckyPoint (20,20) (38,39,76)
+LuckyPoint: pos=(20,20), color=(38,39,76):424, id=LuckyPoint
+> add_beacon Bouquet Bouquet (8,24) (170,133,146)
+Bouquet: pos=(8,24), color=(170,133,146):1454, id=Bouquet
+> add_beacon GreyAsparagus GreyAsparagus (25,10) (69,84,65)
+GreyAsparagus: pos=(25,10), color=(69,84,65):776, id=GreyAsparagus
+> 
+** End of commands from 'bigger-beacons.txt'
+> read "bigger-fibres.txt"
+** Commands from 'bigger-fibres.txt'
+> # Create a fibre labyrinth (generated with "random_seed 1" and "random_labyrinth 13 13 0")
+> add_fibre (14,0) (16,0) 2
+Added fibre: (14,0) <-> (16,0), cost 2
+> add_fibre (16,0) (18,0) 2
+Added fibre: (16,0) <-> (18,0), cost 2
+> add_fibre (16,0) (15,2) 2
+Added fibre: (16,0) <-> (15,2), cost 2
+> add_fibre (15,2) (17,2) 2
+Added fibre: (15,2) <-> (17,2), cost 2
+> add_fibre (17,2) (19,2) 2
+Added fibre: (17,2) <-> (19,2), cost 2
+> add_fibre (17,2) (16,4) 2
+Added fibre: (17,2) <-> (16,4), cost 2
+> add_fibre (14,4) (16,4) 2
+Added fibre: (14,4) <-> (16,4), cost 2
+> add_fibre (14,4) (13,6) 2
+Added fibre: (14,4) <-> (13,6), cost 2
+> add_fibre (14,4) (16,8) 4
+Added fibre: (14,4) <-> (16,8), cost 4
+> add_fibre (14,8) (16,8) 2
+Added fibre: (14,8) <-> (16,8), cost 2
+> add_fibre (14,8) (15,10) 2
+Added fibre: (14,8) <-> (15,10), cost 2
+> add_fibre (13,10) (15,10) 2
+Added fibre: (13,10) <-> (15,10), cost 2
+> add_fibre (13,10) (12,12) 2
+Added fibre: (13,10) <-> (12,12), cost 2
+> # add_fibre (15,10) (14,12) 2
+> add_fibre (15,10) (14,12) 3
+Added fibre: (15,10) <-> (14,12), cost 3
+> add_fibre (14,12) (15,14) 2
+Added fibre: (14,12) <-> (15,14), cost 2
+> # add_fibre (13,14) (15,14) 2
+> add_fibre (13,14) (15,14) 1
+Added fibre: (13,14) <-> (15,14), cost 1
+> add_fibre (15,14) (14,16) 2
+Added fibre: (15,14) <-> (14,16), cost 2
+> add_fibre (14,16) (16,16) 2
+Added fibre: (14,16) <-> (16,16), cost 2
+> add_fibre (16,16) (17,18) 2
+Added fibre: (16,16) <-> (17,18), cost 2
+> add_fibre (9,18) (11,18) 2
+Added fibre: (9,18) <-> (11,18), cost 2
+> add_fibre (9,18) (10,20) 2
+Added fibre: (9,18) <-> (10,20), cost 2
+> add_fibre (8,16) (10,16) 2
+Added fibre: (8,16) <-> (10,16), cost 2
+> add_fibre (9,14) (11,14) 2
+Added fibre: (9,14) <-> (11,14), cost 2
+> add_fibre (9,14) (10,16) 2
+Added fibre: (9,14) <-> (10,16), cost 2
+> add_fibre (8,16) (9,18) 2
+Added fibre: (8,16) <-> (9,18), cost 2
+> add_fibre (11,18) (15,18) 4
+Added fibre: (11,18) <-> (15,18), cost 4
+> add_fibre (11,18) (12,20) 2
+Added fibre: (11,18) <-> (12,20), cost 2
+> add_fibre (12,16) (11,18) 2
+Added fibre: (12,16) <-> (11,18), cost 2
+> add_fibre (15,18) (17,18) 2
+Added fibre: (15,18) <-> (17,18), cost 2
+> add_fibre (15,18) (14,20) 2
+Added fibre: (15,18) <-> (14,20), cost 2
+> add_fibre (14,20) (18,20) 4
+Added fibre: (14,20) <-> (18,20), cost 4
+> add_fibre (14,20) (15,22) 2
+Added fibre: (14,20) <-> (15,22), cost 2
+> add_fibre (15,22) (17,22) 2
+Added fibre: (15,22) <-> (17,22), cost 2
+> add_fibre (17,22) (18,24) 2
+Added fibre: (17,22) <-> (18,24), cost 2
+> add_fibre (15,22) (14,24) 2
+Added fibre: (15,22) <-> (14,24), cost 2
+> add_fibre (6,24) (8,24) 2
+Added fibre: (6,24) <-> (8,24), cost 2
+> add_fibre (5,22) (6,24) 2
+Added fibre: (5,22) <-> (6,24), cost 2
+> add_fibre (4,20) (3,22) 2
+Added fibre: (4,20) <-> (3,22), cost 2
+> add_fibre (1,22) (3,22) 2
+Added fibre: (1,22) <-> (3,22), cost 2
+> add_fibre (1,22) (0,24) 2
+Added fibre: (1,22) <-> (0,24), cost 2
+> add_fibre (1,22) (2,24) 2
+Added fibre: (1,22) <-> (2,24), cost 2
+> add_fibre (2,24) (4,24) 2
+Added fibre: (2,24) <-> (4,24), cost 2
+> add_fibre (4,20) (5,22) 2
+Added fibre: (4,20) <-> (5,22), cost 2
+> add_fibre (6,20) (5,22) 2
+Added fibre: (6,20) <-> (5,22), cost 2
+> add_fibre (5,18) (6,20) 2
+Added fibre: (5,18) <-> (6,20), cost 2
+> add_fibre (7,18) (6,20) 2
+Added fibre: (7,18) <-> (6,20), cost 2
+> add_fibre (7,22) (9,22) 2
+Added fibre: (7,22) <-> (9,22), cost 2
+> add_fibre (7,22) (6,24) 2
+Added fibre: (7,22) <-> (6,24), cost 2
+> add_fibre (8,20) (7,22) 2
+Added fibre: (8,20) <-> (7,22), cost 2
+> add_fibre (8,24) (10,24) 2
+Added fibre: (8,24) <-> (10,24), cost 2
+> add_fibre (10,24) (14,24) 4
+Added fibre: (10,24) <-> (14,24), cost 4
+> add_fibre (11,22) (10,24) 2
+Added fibre: (11,22) <-> (10,24), cost 2
+> add_fibre (14,24) (16,24) 2
+Added fibre: (14,24) <-> (16,24), cost 2
+> add_fibre (13,22) (14,24) 2
+Added fibre: (13,22) <-> (14,24), cost 2
+> add_fibre (18,16) (17,18) 2
+Added fibre: (18,16) <-> (17,18), cost 2
+> add_fibre (18,16) (20,20) 4
+Added fibre: (18,16) <-> (20,20), cost 4
+> add_fibre (21,18) (23,18) 2
+Added fibre: (21,18) <-> (23,18), cost 2
+> add_fibre (23,18) (22,20) 2
+Added fibre: (23,18) <-> (22,20), cost 2
+> add_fibre (22,20) (24,20) 2
+Added fibre: (22,20) <-> (24,20), cost 2
+> add_fibre (24,20) (25,22) 2
+Added fibre: (24,20) <-> (25,22), cost 2
+> add_fibre (25,22) (24,24) 2
+Added fibre: (25,22) <-> (24,24), cost 2
+> add_fibre (25,18) (24,20) 2
+Added fibre: (25,18) <-> (24,20), cost 2
+> add_fibre (22,20) (23,22) 2
+Added fibre: (22,20) <-> (23,22), cost 2
+> add_fibre (19,22) (23,22) 4
+Added fibre: (19,22) <-> (23,22), cost 4
+> add_fibre (19,22) (20,24) 2
+Added fibre: (19,22) <-> (20,24), cost 2
+> add_fibre (20,24) (22,24) 2
+Added fibre: (20,24) <-> (22,24), cost 2
+> add_fibre (22,16) (23,18) 2
+Added fibre: (22,16) <-> (23,18), cost 2
+> add_fibre (21,18) (20,20) 2
+Added fibre: (21,18) <-> (20,20), cost 2
+> add_fibre (17,14) (18,16) 2
+Added fibre: (17,14) <-> (18,16), cost 2
+> add_fibre (19,14) (21,14) 2
+Added fibre: (19,14) <-> (21,14), cost 2
+> add_fibre (19,14) (18,16) 2
+Added fibre: (19,14) <-> (18,16), cost 2
+> add_fibre (19,14) (20,16) 2
+Added fibre: (19,14) <-> (20,16), cost 2
+> add_fibre (20,12) (19,14) 2
+Added fibre: (20,12) <-> (19,14), cost 2
+> add_fibre (19,10) (21,10) 2
+Added fibre: (19,10) <-> (21,10), cost 2
+> add_fibre (21,10) (23,10) 2
+Added fibre: (21,10) <-> (23,10), cost 2
+> add_fibre (23,6) (25,6) 2
+Added fibre: (23,6) <-> (25,6), cost 2
+> add_fibre (25,6) (23,10) 4
+Added fibre: (25,6) <-> (23,10), cost 4
+> add_fibre (24,4) (25,6) 2
+Added fibre: (24,4) <-> (25,6), cost 2
+> add_fibre (25,2) (24,4) 2
+Added fibre: (25,2) <-> (24,4), cost 2
+> add_fibre (21,10) (23,14) 4
+Added fibre: (21,10) <-> (23,14), cost 4
+> add_fibre (23,14) (25,14) 2
+Added fibre: (23,14) <-> (25,14), cost 2
+> add_fibre (25,14) (24,16) 2
+Added fibre: (25,14) <-> (24,16), cost 2
+> add_fibre (25,10) (23,14) 4
+Added fibre: (25,10) <-> (23,14), cost 4
+> add_fibre (19,10) (18,12) 2
+Added fibre: (19,10) <-> (18,12), cost 2
+> add_fibre (17,10) (18,12) 2
+Added fibre: (17,10) <-> (18,12), cost 2
+> add_fibre (19,10) (20,12) 2
+Added fibre: (19,10) <-> (20,12), cost 2
+> add_fibre (18,8) (20,8) 2
+Added fibre: (18,8) <-> (20,8), cost 2
+> add_fibre (20,8) (22,8) 2
+Added fibre: (20,8) <-> (22,8), cost 2
+> add_fibre (22,4) (20,8) 4
+Added fibre: (22,4) <-> (20,8), cost 4
+> add_fibre (21,2) (22,4) 2
+Added fibre: (21,2) <-> (22,4), cost 2
+> add_fibre (20,0) (21,2) 2
+Added fibre: (20,0) <-> (21,2), cost 2
+> add_fibre (22,0) (24,0) 2
+Added fibre: (22,0) <-> (24,0), cost 2
+> add_fibre (24,0) (23,2) 2
+Added fibre: (24,0) <-> (23,2), cost 2
+> add_fibre (22,0) (21,2) 2
+Added fibre: (22,0) <-> (21,2), cost 2
+> add_fibre (18,8) (19,10) 2
+Added fibre: (18,8) <-> (19,10), cost 2
+> add_fibre (16,12) (15,14) 2
+Added fibre: (16,12) <-> (15,14), cost 2
+> add_fibre (16,4) (17,6) 2
+Added fibre: (16,4) <-> (17,6), cost 2
+> add_fibre (18,4) (20,4) 2
+Added fibre: (18,4) <-> (20,4), cost 2
+> add_fibre (20,4) (19,6) 2
+Added fibre: (20,4) <-> (19,6), cost 2
+> add_fibre (18,4) (17,6) 2
+Added fibre: (18,4) <-> (17,6), cost 2
+> add_fibre (14,0) (13,2) 2
+Added fibre: (14,0) <-> (13,2), cost 2
+> add_fibre (12,0) (11,2) 2
+Added fibre: (12,0) <-> (11,2), cost 2
+> add_fibre (11,2) (10,4) 2
+Added fibre: (11,2) <-> (10,4), cost 2
+> add_fibre (10,4) (12,4) 2
+Added fibre: (10,4) <-> (12,4), cost 2
+> add_fibre (10,4) (12,8) 4
+Added fibre: (10,4) <-> (12,8), cost 4
+> add_fibre (10,0) (9,2) 2
+Added fibre: (10,0) <-> (9,2), cost 2
+> add_fibre (7,2) (9,2) 2
+Added fibre: (7,2) <-> (9,2), cost 2
+> add_fibre (7,2) (8,4) 2
+Added fibre: (7,2) <-> (8,4), cost 2
+> add_fibre (6,4) (8,4) 2
+Added fibre: (6,4) <-> (8,4), cost 2
+> add_fibre (8,4) (9,6) 2
+Added fibre: (8,4) <-> (9,6), cost 2
+> add_fibre (9,6) (8,8) 2
+Added fibre: (9,6) <-> (8,8), cost 2
+> add_fibre (8,8) (9,10) 2
+Added fibre: (8,8) <-> (9,10), cost 2
+> add_fibre (9,10) (11,10) 2
+Added fibre: (9,10) <-> (11,10), cost 2
+> add_fibre (11,10) (10,12) 2
+Added fibre: (11,10) <-> (10,12), cost 2
+> add_fibre (10,8) (11,10) 2
+Added fibre: (10,8) <-> (11,10), cost 2
+> add_fibre (7,6) (8,8) 2
+Added fibre: (7,6) <-> (8,8), cost 2
+> add_fibre (6,0) (8,0) 2
+Added fibre: (6,0) <-> (8,0), cost 2
+> add_fibre (6,0) (5,2) 2
+Added fibre: (6,0) <-> (5,2), cost 2
+> add_fibre (3,2) (5,2) 2
+Added fibre: (3,2) <-> (5,2), cost 2
+> add_fibre (3,2) (2,4) 2
+Added fibre: (3,2) <-> (2,4), cost 2
+> add_fibre (0,4) (2,4) 2
+Added fibre: (0,4) <-> (2,4), cost 2
+> add_fibre (2,4) (4,4) 2
+Added fibre: (2,4) <-> (4,4), cost 2
+> add_fibre (4,4) (5,6) 2
+Added fibre: (4,4) <-> (5,6), cost 2
+> add_fibre (3,6) (5,6) 2
+Added fibre: (3,6) <-> (5,6), cost 2
+> add_fibre (3,6) (2,8) 2
+Added fibre: (3,6) <-> (2,8), cost 2
+> add_fibre (1,6) (2,8) 2
+Added fibre: (1,6) <-> (2,8), cost 2
+> add_fibre (5,6) (4,8) 2
+Added fibre: (5,6) <-> (4,8), cost 2
+> add_fibre (4,8) (6,8) 2
+Added fibre: (4,8) <-> (6,8), cost 2
+> add_fibre (4,8) (3,10) 2
+Added fibre: (4,8) <-> (3,10), cost 2
+> add_fibre (4,8) (6,12) 4
+Added fibre: (4,8) <-> (6,12), cost 4
+> add_fibre (0,12) (2,12) 2
+Added fibre: (0,12) <-> (2,12), cost 2
+> add_fibre (1,10) (0,12) 2
+Added fibre: (1,10) <-> (0,12), cost 2
+> add_fibre (0,8) (1,10) 2
+Added fibre: (0,8) <-> (1,10), cost 2
+> add_fibre (2,12) (4,12) 2
+Added fibre: (2,12) <-> (4,12), cost 2
+> add_fibre (4,12) (6,12) 2
+Added fibre: (4,12) <-> (6,12), cost 2
+> add_fibre (4,12) (3,14) 2
+Added fibre: (4,12) <-> (3,14), cost 2
+> add_fibre (1,14) (3,14) 2
+Added fibre: (1,14) <-> (3,14), cost 2
+> add_fibre (1,14) (2,16) 2
+Added fibre: (1,14) <-> (2,16), cost 2
+> add_fibre (0,16) (2,16) 2
+Added fibre: (0,16) <-> (2,16), cost 2
+> add_fibre (0,16) (1,18) 2
+Added fibre: (0,16) <-> (1,18), cost 2
+> add_fibre (1,18) (0,20) 2
+Added fibre: (1,18) <-> (0,20), cost 2
+> add_fibre (0,20) (2,20) 2
+Added fibre: (0,20) <-> (2,20), cost 2
+> add_fibre (3,18) (2,20) 2
+Added fibre: (3,18) <-> (2,20), cost 2
+> add_fibre (4,12) (5,14) 2
+Added fibre: (4,12) <-> (5,14), cost 2
+> add_fibre (5,14) (7,14) 2
+Added fibre: (5,14) <-> (7,14), cost 2
+> add_fibre (5,14) (4,16) 2
+Added fibre: (5,14) <-> (4,16), cost 2
+> add_fibre (4,16) (6,16) 2
+Added fibre: (4,16) <-> (6,16), cost 2
+> add_fibre (7,10) (6,12) 2
+Added fibre: (7,10) <-> (6,12), cost 2
+> add_fibre (7,10) (8,12) 2
+Added fibre: (7,10) <-> (8,12), cost 2
+> add_fibre (1,2) (2,4) 2
+Added fibre: (1,2) <-> (2,4), cost 2
+> add_fibre (0,0) (1,2) 2
+Added fibre: (0,0) <-> (1,2), cost 2
+> add_fibre (2,0) (1,2) 2
+Added fibre: (2,0) <-> (1,2), cost 2
+> add_fibre (4,0) (5,2) 2
+Added fibre: (4,0) <-> (5,2), cost 2
+> add_fibre (8,0) (7,2) 2
+Added fibre: (8,0) <-> (7,2), cost 2
+> add_fibre (10,0) (11,2) 2
+Added fibre: (10,0) <-> (11,2), cost 2
+> add_fibre (12,0) (13,2) 2
+Added fibre: (12,0) <-> (13,2), cost 2
+> 
+** End of commands from 'bigger-fibres.txt'
+> # Do tests
+> route_any (2,12) (8,24)
+0.    (2,12) : 0
+1. -> (4,12) : 2
+2. -> (6,12) : 4
+3. -> (4,8) : 8
+4. -> (5,6) : 10
+5. -> (4,4) : 12
+6. -> (2,4) : 14
+7. -> (3,2) : 16
+8. -> (5,2) : 18
+9. -> (6,0) : 20
+10. -> (8,0) : 22
+11. -> (7,2) : 24
+12. -> (9,2) : 26
+13. -> (10,0) : 28
+14. -> (11,2) : 30
+15. -> (12,0) : 32
+16. -> (13,2) : 34
+17. -> (14,0) : 36
+18. -> (16,0) : 38
+19. -> (15,2) : 40
+20. -> (17,2) : 42
+21. -> (16,4) : 44
+22. -> (14,4) : 46
+23. -> (16,8) : 50
+24. -> (14,8) : 52
+25. -> (15,10) : 54
+26. -> (14,12) : 57
+27. -> (15,14) : 59
+28. -> (14,16) : 61
+29. -> (16,16) : 63
+30. -> (17,18) : 65
+31. -> (15,18) : 67
+32. -> (14,20) : 69
+33. -> (15,22) : 71
+34. -> (14,24) : 73
+35. -> (10,24) : 77
+36. -> (8,24) : 79
+> fibres (14,24)
+1. (13,22) : 2
+2. (15,22) : 2
+3. (10,24) : 4
+4. (16,24) : 2
+> remove_fibre (10,24) (14,24)
+Removed fibre: (10,24) <-> (14,24)
+> fibres (14,24)
+1. (13,22) : 2
+2. (15,22) : 2
+3. (16,24) : 2
+> route_any (2,12) (8,24)
+No path found!
+> quit

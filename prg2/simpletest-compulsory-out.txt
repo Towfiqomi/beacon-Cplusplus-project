@@ -1,0 +1,52 @@
+> # VERY simple basic test of all compulsory commands
+> # Clear the data structures and check that no beacons or fibres exist
+> clear_beacons
+Cleared all beacons
+> clear_fibres
+All fibres removed.
+> # Test compulsory commands with empty data
+> all_beacons
+No beacons!
+> all_xpoints
+No xpoints!
+> clear_fibres
+All fibres removed.
+> fibres (0,0)
+No fibres!
+> # Add One Beacon, one fibre, and test commands
+> add_beacon Srn BaradDur (2,2) (255,100,0)
+BaradDur: pos=(2,2), color=(255,100,0):1365, id=Srn
+> add_fibre (2,2) (5,3) 5
+Added fibre: (2,2) <-> (5,3), cost 5
+> all_fibres
+(2,2) -> (5,3)
+> all_xpoints
+1. (2,2)
+2. (5,3)
+> fibres (2,2)
+1. (5,3) : 5
+> fibres (5,3)
+1. (2,2) : 5
+> # And second beacon and test routes
+> add_beacon Agn MinasTirith (3,6) (200,200,200)
+MinasTirith: pos=(3,6), color=(200,200,200):2000, id=Agn
+> add_fibre (3,6) (5,3) 3
+Added fibre: (3,6) <-> (5,3), cost 3
+> all_fibres
+(2,2) -> (5,3)
+(5,3) -> (3,6)
+> route_any (2,2) (3,6)
+0.    (2,2) : 0
+1. -> (5,3) : 5
+2. -> (3,6) : 8
+> # Remove fibre and test again
+> remove_fibre (5,3) (2,2)
+Removed fibre: (5,3) <-> (2,2)
+> route_any (2,2) (3,6)
+No path found!
+> all_fibres
+(5,3) -> (3,6)
+> all_xpoints
+1. (5,3)
+2. (3,6)
+> quit

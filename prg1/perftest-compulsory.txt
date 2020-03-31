@@ -1,0 +1,5 @@
+# Read performance tests of compulsory operations
+read "../../../../prg1/perftest-sorting.txt"
+read "../../../../prg1/perftest-minmax.txt"
+read "../../../../prg1/perftest-change.txt"
+read "../../../../prg1/perftest-outbeam.txt"

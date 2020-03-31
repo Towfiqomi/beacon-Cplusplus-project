@@ -1,0 +1,14 @@
+# VERY simple basic test of all (compulsory+non-compulsory) commands
+# Test all compulsory commands
+read "simpletest-compulsory-in.txt"
+# Add more fibres
+add_fibre (2,2) (5,3) 5
+add_fibre (3,6) (2,2) 10
+# Test non-compulsory commands
+route_least_xpoints (2,2) (3,6)
+route_fastest (2,2) (3,6)
+route_fibre_cycle (2,2)
+all_fibres
+trim_fibre_network
+all_fibres
+quit

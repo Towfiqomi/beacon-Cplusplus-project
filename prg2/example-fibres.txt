@@ -1,0 +1,6 @@
+add_fibre (0,0) (6,0) 1
+add_fibre (6,0) (10,4) 1
+add_fibre (10,4) (6,6) 1
+add_fibre (6,6) (11,10) 1
+add_fibre (0,0) (1,6) 2
+add_fibre (1,6) (6,6) 3

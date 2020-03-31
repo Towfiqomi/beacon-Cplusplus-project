@@ -1,0 +1,3 @@
+# Read performance tests of compulsory operations
+read "perftest-fibres.txt"
+read "perftest-route_any.txt"

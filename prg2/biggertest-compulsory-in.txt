@@ -1,0 +1,12 @@
+# Read in a bigger set of beacons and fibres
+clear_beacons
+clear_fibres
+read "bigger-beacons.txt"
+read "bigger-fibres.txt"
+# Do tests
+route_any (2,12) (8,24)
+fibres (14,24)
+remove_fibre (10,24) (14,24)
+fibres (14,24)
+route_any (2,12) (8,24)
+quit

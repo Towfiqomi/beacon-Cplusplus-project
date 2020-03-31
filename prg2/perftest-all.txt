@@ -1,0 +1,6 @@
+# Read performance tests of all operations
+read "perftest-compulsory.txt"
+read "perftest-route_least_xpoints.txt"
+read "perftest-route_fastest.txt"
+read "perftest-route_fibre_cycle.txt"
+read "perftest-trim_fibre_network.txt"

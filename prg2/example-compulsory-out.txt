@@ -1,0 +1,75 @@
+> clear_beacons
+Cleared all beacons
+> clear_fibres
+All fibres removed.
+> read "example-beacons.txt"
+** Commands from 'example-beacons.txt'
+> # Add beacons
+> add_beacon G1 Lime (0,0) (0,255,0)
+Lime: pos=(0,0), color=(0,255,0):1530, id=G1
+> add_beacon M1 Fuchsia (6,0) (255,0,255)
+Fuchsia: pos=(6,0), color=(255,0,255):1020, id=M1
+> add_beacon R1 Crimson (1,6) (220,20,60)
+Crimson: pos=(1,6), color=(220,20,60):840, id=R1
+> add_beacon B2 Teal (11, 10) (0,128,128)
+Teal: pos=(11,10), color=(0,128,128):896, id=B2
+> add_beacon M2 Indigo (10, 4) (75,0,130)
+Indigo: pos=(10,4), color=(75,0,130):355, id=M2
+> 
+** End of commands from 'example-beacons.txt'
+> read "example-lightbeams.txt"
+** Commands from 'example-lightbeams.txt'
+> # Add light sources
+> add_lightbeam G1 M1
+Added lightbeam: Lime -> Fuchsia
+> add_lightbeam R1 M2
+Added lightbeam: Crimson -> Indigo
+> add_lightbeam M1 M2
+Added lightbeam: Fuchsia -> Indigo
+> add_lightbeam M2 B2
+Added lightbeam: Indigo -> Teal
+> 
+** End of commands from 'example-lightbeams.txt'
+> read "example-fibres.txt"
+** Commands from 'example-fibres.txt'
+> add_fibre (0,0) (6,0) 1
+Added fibre: (0,0) <-> (6,0), cost 1
+> add_fibre (6,0) (10,4) 1
+Added fibre: (6,0) <-> (10,4), cost 1
+> add_fibre (10,4) (6,6) 1
+Added fibre: (10,4) <-> (6,6), cost 1
+> add_fibre (6,6) (11,10) 1
+Added fibre: (6,6) <-> (11,10), cost 1
+> add_fibre (0,0) (1,6) 2
+Added fibre: (0,0) <-> (1,6), cost 2
+> add_fibre (1,6) (6,6) 3
+Added fibre: (1,6) <-> (6,6), cost 3
+> 
+** End of commands from 'example-fibres.txt'
+> all_xpoints
+1. (0,0)
+2. (6,0)
+3. (10,4)
+4. (1,6)
+5. (6,6)
+6. (11,10)
+> fibres (6,6)
+1. (10,4) : 1
+2. (1,6) : 3
+3. (11,10) : 1
+> remove_fibre (6,6) (1,6)
+Removed fibre: (6,6) <-> (1,6)
+> fibres (6,6)
+1. (10,4) : 1
+2. (11,10) : 1
+> route_any (0,0) (11,10)
+0.    (0,0) : 0
+1. -> (6,0) : 1
+2. -> (10,4) : 2
+3. -> (6,6) : 3
+4. -> (11,10) : 4
+> clear_fibres
+All fibres removed.
+> all_xpoints
+No xpoints!
+> 

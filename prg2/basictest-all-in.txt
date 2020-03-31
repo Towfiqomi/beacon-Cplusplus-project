@@ -1,0 +1,19 @@
+# Read basic tests of compulsory operations
+read "basictest-compulsory-in.txt"
+# Read fibres back in
+read "example-fibres.txt"
+# Test non-compulsory operations
+route_least_xpoints (11,10) (0,0)
+route_fastest (11,10) (0,0)
+route_fibre_cycle (11,10)
+add_fibre (6,6) (0,0) 0
+route_least_xpoints (1,6) (10,4)
+route_fastest (1,6) (10,4)
+remove_fibre (6,0) (10,4)
+route_fibre_cycle (10,4)
+add_fibre (6,0) (10,4) 6
+add_fibre (10,4) (11,10) 3
+add_fibre (11,10) (1,6) 1
+trim_fibre_network
+all_fibres
+quit

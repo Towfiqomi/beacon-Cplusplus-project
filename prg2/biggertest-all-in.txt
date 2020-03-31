@@ -1,0 +1,14 @@
+# Read bigger compulsory tests
+read "biggertest-compulsory-in.txt"
+# Test original labyrinth, which should have no cycles
+route_fibre_cycle (20,0)
+# Add extra fibre and test routes
+add_fibre (20,4) (21,2) 100
+route_least_xpoints (20,0) (9,2)
+route_fastest (20,0) (9,2)
+route_fibre_cycle (20,0)
+add_fibre (12,12) (13,14) 1
+all_fibres
+trim_fibre_network
+all_fibres
+quit

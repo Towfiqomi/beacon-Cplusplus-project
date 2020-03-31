@@ -1,0 +1,11 @@
+clear_beacons
+clear_fibres
+read "example-beacons.txt"
+read "example-lightbeams.txt"
+read "example-fibres.txt"
+route_least_xpoints (0,0) (11,10)
+route_fastest (0,0) (11,10)
+route_fibre_cycle (11,10)
+all_fibres
+trim_fibre_network
+all_fibres
